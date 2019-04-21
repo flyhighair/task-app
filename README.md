@@ -1,24 +1,39 @@
-# README
+# Task App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## DBスキーマ
 
-Things you may want to cover:
+### usersテーブル
 
-* Ruby version
+|カラム名|データ型|
+| ---- | ---- |
+|id|integer|
+|name|varchar|
+|email|varchar|
+|password|varchar|
+|role|integer|
+|created_at|timestamp|
+|updated_at|timestamp|
 
-* System dependencies
+### tasksテーブル
 
-* Configuration
+|カラム名|データ型|
+| ---- | ---- |
+|id|integer|
+|user_id|integer|
+|name|varchar|
+|description|text|
+|status|integer|
+|priority|integer|
+|deadline|timestamp|
+|created_at|timestamp|
+|updated_at|timestamp|
 
-* Database creation
+### labelsテーブル
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+|カラム名|データ型|
+| ---- | ---- |
+|id|int|
+|task_id|int|
+|label|varchar|
+|created_at|timestamp|
+|updated_at|timestamp|
