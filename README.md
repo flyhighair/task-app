@@ -10,7 +10,16 @@
 |name|varchar|
 |email|varchar|
 |password|varchar|
-|role|integer|
+|role_id|integer|
+|created_at|timestamp|
+|updated_at|timestamp|
+
+### rolesテーブル
+
+|カラム名|データ型|
+| ---- | ---- |
+|id|integer|
+|role|varchar|
 |created_at|timestamp|
 |updated_at|timestamp|
 
@@ -22,9 +31,27 @@
 |user_id|integer|
 |name|varchar|
 |description|text|
-|status|integer|
-|priority|integer|
+|status_id|integer|
+|priority_id|integer|
 |deadline|timestamp|
+|created_at|timestamp|
+|updated_at|timestamp|
+
+### statusesテーブル
+
+|カラム名|データ型|
+| ---- | ---- |
+|id|integer|
+|status|varchar|
+|created_at|timestamp|
+|updated_at|timestamp|
+
+### prioritiesテーブル
+
+|カラム名|データ型|
+| ---- | ---- |
+|id|integer|
+|priority|varchar|
 |created_at|timestamp|
 |updated_at|timestamp|
 
@@ -32,8 +59,17 @@
 
 |カラム名|データ型|
 | ---- | ---- |
-|id|int|
-|task_id|int|
+|id|integer|
 |label|varchar|
+|created_at|timestamp|
+|updated_at|timestamp|
+
+### task_labelテーブル
+
+|カラム名|データ型|
+| ---- | ---- |
+|id|integer|
+|task_id|integer|
+|label_id|integer|
 |created_at|timestamp|
 |updated_at|timestamp|
