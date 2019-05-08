@@ -68,3 +68,7 @@ gem "slim-rails"
 gem 'bootstrap', '~> 4.3.1'
 
 gem 'jquery-rails'
+
+# Paginate list view
+gem 'will_paginate'
+gem 'will_paginate-bootstrap4'
