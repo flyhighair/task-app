@@ -64,3 +64,7 @@ gem 'pg', '~> 0.18.4'
 
 # Use Slim generators for Slim templates
 gem "slim-rails"
+
+gem 'bootstrap', '~> 4.3.1'
+
+gem 'jquery-rails'
