@@ -1,0 +1,16 @@
+header class="header-bar"
+table class="table mt-5"
+  thead
+    tr
+      th scope="col"
+        | タスク名
+      th scope="col"
+        | 説明
+  tbody
+  - @tasks.each do |task|
+    tr
+      td
+        = task[:name]
+      td
+        = task[:description]
+= will_paginate @tasks, list_classes: %w(pagination justify-content-end)

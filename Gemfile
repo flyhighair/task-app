@@ -61,3 +61,16 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Use PostgreSQL as the database for Active Record
 gem 'pg', '~> 0.18.4'
+
+# Use Slim generators for Slim templates
+gem "slim-rails"
+
+gem 'bootstrap', '~> 4.3.1'
+
+gem 'jquery-rails'
+
+# Paginate list view
+gem 'will_paginate'
+gem 'will_paginate-bootstrap4'
+
+gem 'seed-fu'
