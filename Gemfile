@@ -72,3 +72,5 @@ gem 'jquery-rails'
 # Paginate list view
 gem 'will_paginate'
 gem 'will_paginate-bootstrap4'
+
+gem 'seed-fu'
