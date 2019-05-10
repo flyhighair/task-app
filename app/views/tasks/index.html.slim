@@ -10,7 +10,7 @@ table class="table mt-5"
   - @tasks.each do |task|
     tr
       td
-        = task[:name]
+        = link_to task[:name], task_path(task)
       td
         = task[:description]
 = will_paginate @tasks, list_classes: %w(pagination justify-content-end)
