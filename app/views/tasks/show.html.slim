@@ -1,0 +1,15 @@
+header.header-bar
+nav.ml-2
+  = link_to  tasks_path, :class => "text-decoration-none"
+    = image_tag 'backicon.png'
+    span.ml-2.align-bottom 一覧に戻る
+div.container.mt-5
+  h3 Task Detail
+  table.table
+    tbody
+      tr
+        th タスク名
+        td= @task[:name]
+      tr
+        th 説明
+        td= simple_format(h(@task[:description]), (), sanitize: false, wrapper_tag: "div")
