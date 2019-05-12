@@ -7,6 +7,7 @@ table class="table"
       th scope="col"
         | 説明
       th scope="col"
+      th scope="col"
   tbody
   - @tasks.each do |task|
     tr
@@ -17,4 +18,7 @@ table class="table"
       td
         = link_to  edit_task_path(task[:id]), :class => "link-icon"
           = image_tag 'editicon.png'
+      td
+        = link_to task, method: :delete, data: { confirm: "タスク 「#{task.name}」を削除しますか？"}, :class => "link-icon"
+          = image_tag 'deleteicon.png'
 = will_paginate @tasks, list_classes: %w(pagination justify-content-end)
