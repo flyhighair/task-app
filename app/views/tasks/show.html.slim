@@ -12,3 +12,5 @@ div.container.mt-5
       tr
         th 説明
         td= simple_format(h(@task[:description]), (), sanitize: false, wrapper_tag: "div")
+  .d-flex.justify-content-end
+    = link_to 'Edit', edit_task_path, :class => "btn btn-primary"
