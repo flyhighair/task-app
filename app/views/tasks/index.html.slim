@@ -6,6 +6,7 @@ table class="table"
         | タスク名
       th scope="col"
         | 説明
+      th scope="col"
   tbody
   - @tasks.each do |task|
     tr
@@ -13,4 +14,7 @@ table class="table"
         = link_to task[:name], task_path(task)
       td
         = task[:description]
+      td
+        = link_to  edit_task_path(task[:id]), :class => "link-icon"
+          = image_tag 'editicon.png'
 = will_paginate @tasks, list_classes: %w(pagination justify-content-end)

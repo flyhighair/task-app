@@ -3,3 +3,9 @@
   height: 50px;
   background-color: #4597F5;
 }
+
+.link-icon {
+  &:hover {
+    opacity: 0.5;
+  }
+}
