@@ -9,4 +9,9 @@ html
     = stylesheet_link_tag    'tasks', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
+    header.header-bar
+    - if flash.notice.present?
+      .alert.alert-success= flash.notice
+    - elsif flash.alert.present?
+      .alert.alert-danger= flash.alert
     = yield
